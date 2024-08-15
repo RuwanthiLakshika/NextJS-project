@@ -18,8 +18,9 @@ export default function LoginPage(){
             <h1>Login</h1>
             <hr/>
 
-            <label htmlFor="email">email</label>
-            <input 
+            <label htmlFor="email" className="mt-5">email</label>
+            <input
+                className="text-black p-1 mb-3 mt-1 rounded" 
                 id="email"
                 type="text"
                 value={user.email}
@@ -28,7 +29,8 @@ export default function LoginPage(){
                 />
 
             <label htmlFor="password">password</label>
-            <input 
+            <input
+                className="text-black p-1 mb-3 mt-1 rounded" 
                 id="password"
                 type="password"
                 value={user.password}
@@ -36,6 +38,7 @@ export default function LoginPage(){
                 placeholder="password"
                 />
             <button
+            className=" mt-5 mb-5 border bg-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
             onClick={onLogin}
             >Login here</button>
             <Link href="/signup">Visit SignUp page</Link>
